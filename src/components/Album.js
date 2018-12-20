@@ -55,11 +55,11 @@ class Album extends Component {
       const isSameSong = this.state.currentSong === song;
       if(this.state.isPlaying && isSameSong){
         return(
-          <td><button><span className="icon ion-md-pause"></span></button></td>
+          <td><button><ion-icon name="pause"></ion-icon></button></td>
         );
       } else if(this.state.isHovering === index){
         return(
-          <td><button><span className="icon ion-md-play"></span></button></td>
+          <td><button><ion-icon name="play"></ion-icon></button></td>
         );
       } else {
           return(
@@ -84,7 +84,7 @@ class Album extends Component {
               <col id="song-number-column" />
               <col id="song-title-column" />
               <col id="song-duration-column" />
-            </colgroup> 
+            </colgroup>
 
             <tbody>
             {
