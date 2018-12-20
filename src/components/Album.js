@@ -84,7 +84,7 @@ class Album extends Component {
               <col id="song-number-column" />
               <col id="song-title-column" />
               <col id="song-duration-column" />
-            </colgroup>
+            </colgroup> 
 
             <tbody>
             {
