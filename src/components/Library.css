@@ -1,0 +1,11 @@
+.images {
+  border: 5px solid;
+  border-color: white;
+  border-radius: 25px;
+}
+div{
+  color: white;
+  text-decoration-color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+}

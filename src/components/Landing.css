@@ -1,0 +1,14 @@
+.landing{
+  color: white;
+  font-family: 'Dosis', sans-serif
+}
+.point-title{
+text-align: left;
+padding-left: 40px;
+font-size: 40px;
+font-weight: bold;
+}
+.point-description{
+  font-size: 30px;
+  font-weight: lighter;
+}
