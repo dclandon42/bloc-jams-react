@@ -1,32 +1,144 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+}
+
+.left-bar {
+  width: 250px;
+  color: white;
+  background-color: #f796a8;
+  padding-left: 30px;
+}
+
+h1{
+  display: block;
+  font-size: 40px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  border-radius: 50px;
+  border-style: double;
+  border-width: thick;
+  text-align: center;
+  margin-right: 30px;
+
+}
+
+.log-in,
+.active-room {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 25px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.room {
+  display: flex;
+  height: 40px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.room-input {
+  height: 20px;
+  width: 125px;
+  border: none;
+  margin-top: 25px;
+  padding-left: 5px;
+}
+
+.room-button {
+  margin-left: -26px;
+  background-color: #baf2e7;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.room-input,
+.room-button,
+.message-input,
+.message-submit,
+.delete-button {
+  border-radius: 5px;
+}
+
+.right-bar {
+  flex-grow: 1;
+}
+
+.messages {
+  height: calc(100vh - 109px);
+  overflow-y: scroll;
+}
+
+.active-room {
+  text-align: center;
+  background-color: #baf2e7;
+}
+
+.message {
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.message:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.message-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-controls {
+  position: relative;
+}
+
+.message-controls .delete-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.message-form {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  padding: 8px 20px;
+  background-color: white;
+  border-top: 1px solid #baf2e7;
+  font-family: 'Assistant', sans-serif;
+}
+
+.message-input {
+  height: 25px;
+  font-size: 20px;
+  flex-grow: 1;
+  border: solid #f796a8 1px;
+  margin-right: 8px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.message-submit {
+  background-color: #baf2e7;
+  border: none;
+  font-size: 14px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.delete-button {
+  display: none;
+  background-color: #f796a8;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-button:hover {
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.room:hover .delete-button,
+.message:hover .delete-button {
+  display: block;
 }
